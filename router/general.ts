@@ -8,7 +8,9 @@ const users: { id: string; username: string; password: string }[] = [{ id: '0', 
 
 const public_users: Router = express.Router();
 
+
 public_users.post('/register', (req: Request, res: Response) => {
+// #swagger.description = 'Any one can register account through this endpoint'
   const username: string = req.body.username;
   const password: string = req.body.password;
   const id: string = uuidv4() + '-U-' + Date.now();
@@ -26,6 +28,7 @@ public_users.post('/register', (req: Request, res: Response) => {
 });
 
 public_users.get('/', async (req: Request, res: Response) => {
+//  #swagger.description = 'Get all books information'
   try {
     res.send(JSON.stringify(books, null, 4));
   } catch (error) {

@@ -11,23 +11,30 @@
     "http"
   ],
   "paths": {
-    "/login": {
+    "/customer/login": {
       "post": {
         "description": "",
         "parameters": [
           {
             "name": "body",
             "in": "body",
+            "description": "Login with username and password",
             "schema": {
               "type": "object",
               "properties": {
                 "username": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "JohnDoe"
                 },
                 "password": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "123456"
                 }
-              }
+              },
+              "required": [
+                "username",
+                "password"
+              ]
             }
           }
         ],
@@ -40,13 +47,16 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "403": {
+            "description": "Forbidden"
           }
         }
       }
     },
-    "/auth/review/{isbn}": {
+    "/customer/auth/review/{isbn}": {
       "put": {
-        "description": "",
+        "description": "Add/edit review to request body and pass in isbn as query parameter",
         "parameters": [
           {
             "name": "isbn",
@@ -73,13 +83,16 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "403": {
+            "description": "Forbidden"
           }
         }
       }
     },
     "/register": {
       "post": {
-        "description": "",
+        "description": "Any one can register account through this endpoint",
         "parameters": [
           {
             "name": "body",
@@ -101,6 +114,9 @@
           "200": {
             "description": "OK"
           },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
             "description": "Not Found"
           }
@@ -109,10 +125,13 @@
     },
     "/": {
       "get": {
-        "description": "",
+        "description": "Get all books information",
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "403": {
+            "description": "Forbidden"
           },
           "500": {
             "description": "Internal Server Error"

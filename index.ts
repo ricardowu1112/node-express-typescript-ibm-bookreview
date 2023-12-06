@@ -54,10 +54,6 @@ app.use("/customer/auth/*", function auth(req, res, next) {
 app.use("/customer", customer_routes);
 app.use("/", genl_routes);
 
-app.get('/', (req: Request, res: Response) => {
-    res.send('Welcome to Express & TypeScript Server');
-});
-
 app.listen(port, () => {
     console.log(`Server is Fire at http://localhost:${port}`);
 });
