@@ -2,6 +2,8 @@ import express, { Request, Response, Router } from 'express';
 import { isValid } from './auth_users';
 import books from './booksdb';
 import { v4 as uuidv4 } from 'uuid';
+// import connectToDatabase from '../mongo';
+// import User from '../src/schema/User'; // Import your Mongoose model
 
 const users: { id: string; username: string; password: string }[] = [{ id: '0', username: 'admin', password: 'admin' }];
 
@@ -9,8 +11,18 @@ const users: { id: string; username: string; password: string }[] = [{ id: '0', 
 const public_users: Router = express.Router();
 
 
-public_users.post('/register', (req: Request, res: Response) => {
+public_users.post('/register', async(req: Request, res: Response) => {
 // #swagger.description = 'Any one can register account through this endpoint'
+
+// try {
+//     const newUser = new User(req.body);
+//     const savedUser = await newUser.save();
+//     res.status(201).json(savedUser);
+//   } catch (error) {
+//     res.status(500).json({ error: 'An error occurred' });
+//   }
+
+
   const username: string = req.body.username;
   const password: string = req.body.password;
   const id: string = uuidv4() + '-U-' + Date.now();
