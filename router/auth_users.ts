@@ -55,8 +55,9 @@ regd_users.post('/login', (req: Request, res: Response) => {
 regd_users.put('/auth/review/:isbn', (req: Request, res: Response) => {
   const isbn: number = +req.params.isbn; // 使用+将参数转换为数字
   const review: string = req.body.review;
-  const username = req.session.authorization?.username;
-
+  const username = req.user.data;
+  //is use username= req.session.authorization.username; is wrong, as we don't know whether the username is property or not, 
+  //so use req.session.authorization?username instead
 
   if (!isbn || !review || !username) {
     return res.status(400).json({ message: 'Invalid request. ISBN, review, and authentication are required.' });
@@ -80,6 +81,7 @@ regd_users.put('/auth/review/:isbn', (req: Request, res: Response) => {
     books[isbn]?.reviews.push(newReview);
     return res.status(200).json({ message: 'Review added successfully.' });
   }
+
 });
 
 // 在书评路由中使用会话

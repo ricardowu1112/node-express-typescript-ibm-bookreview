@@ -1,16 +1,10 @@
 import express, { Request, Response, Router } from 'express';
-// import { isValid, users } from './auth_users';
+import { isValid } from './auth_users';
 import books from './booksdb';
 import { v4 as uuidv4 } from 'uuid';
 
 const users: { id: string; username: string; password: string }[] = [{ id: '0', username: 'admin', password: 'admin' }];
 
-const isValid = (username: string): boolean => {
-    const userswithsamename = users.filter((user) => {
-      return user.username === username;
-    });
-    return userswithsamename.length > 0;
-  };
 
 const public_users: Router = express.Router();
 
