@@ -10,7 +10,7 @@ import bcrypt from 'bcrypt';
 // }
 
 
-const users: { id: string; username: string; hashedPassword: string }[] = [{id: "0", username: 'admin',hashedPassword: '$2b$10$sqnNDaeLbVwvAmcNH2xrVeLSsiO7xJWtSigPoed/2aJYB63nZ5mG.'}];
+const users: { id: string; username: string; hashedPassword: string; createdAt: string; ip:string }[] = [{id: "0", username: 'admin',hashedPassword: '$2b$10$sqnNDaeLbVwvAmcNH2xrVeLSsiO7xJWtSigPoed/2aJYB63nZ5mG.',createdAt:'0',ip:'0'}];
 
 const regd_users: Router = express.Router();
 
@@ -85,7 +85,7 @@ regd_users.get('/auth/users', (req: Request, res: Response) => {
     }
     res.send(JSON.stringify(users, null, 4));
   });
-  
+
 
 regd_users.put('/auth/review/:isbn', (req: Request, res: Response) => {
 //  #swagger.description = 'Add/edit review to request body and pass in isbn as query parameter'
