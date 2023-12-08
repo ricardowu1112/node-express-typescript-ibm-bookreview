@@ -53,11 +53,11 @@
           "400": {
             "description": "Bad Request"
           },
-          "401": {
-            "description": "Unauthorized"
-          },
           "403": {
             "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"
@@ -88,32 +88,15 @@
         }
       }
     },
-    "/customer/auth/review/{isbn}": {
-      "put": {
-        "description": "Add/edit review to request body and pass in isbn as query parameter",
+    "/register": {
+      "post": {
+        "summary": "User registration",
+        "description": "",
         "parameters": [
-          {
-            "name": "isbn",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
           {
             "name": "authorization",
             "in": "header",
             "type": "string"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "review": {
-                  "example": "any"
-                }
-              }
-            }
           }
         ],
         "responses": {
@@ -125,45 +108,16 @@
           },
           "403": {
             "description": "Forbidden"
-          }
-        }
-      }
-    },
-    "/register": {
-      "post": {
-        "description": "Any one can register account through this endpoint",
-        "parameters": [
-          {
-            "name": "authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "username": {
-                  "example": "any"
-                },
-                "password": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "403": {
-            "description": "Forbidden"
           },
           "404": {
             "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
+        },
+        "requestBody": {
+          "required": true
         }
       }
     },

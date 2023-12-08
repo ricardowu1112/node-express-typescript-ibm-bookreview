@@ -1,0 +1,191 @@
+2023-12-09 01:10:11:1011 [35mhttp[39m: [35m::1 GET / 200 1155 - 1.763 ms[39m
+[35m[39m
+2023-12-09 01:10:19:1019 [31merror[39m: [31mUnable to register user.[39m
+2023-12-09 01:10:19:1019 [35mhttp[39m: [35m::1 POST /register 404 38 - 1.658 ms[39m
+[35m[39m
+2023-12-09 01:10:19:1019 [32minfo[39m: [32m|User register| username: admin1, id: 76c90f76-0e43-4335-83b9-859c90571be6-U-1702055419709 at ::1  |success|.[39m
+2023-12-09 01:11:11:1111 [31merror[39m: [31mUnable to register user.[39m
+2023-12-09 01:11:11:1111 [35mhttp[39m: [35m::1 POST /register 404 38 - 5.149 ms[39m
+[35m[39m
+2023-12-09 01:11:11:1111 [32minfo[39m: [32m|User register| username: admin1, id: da599dba-6ec5-4f2d-97ff-e62d97f87b3f-U-1702055471756 at ::1  |success|.[39m
+2023-12-09 01:13:38:1338 [31merror[39m: [31mUnable to register user.[39m
+2023-12-09 01:13:38:1338 [35mhttp[39m: [35m::1 POST /register 404 38 - 6.173 ms[39m
+[35m[39m
+2023-12-09 01:13:38:1338 [32minfo[39m: [32m|User register| username: admin1, id: b9698404-b2bc-44d0-ae14-59da2bb0a159-U-1702055618101 at ::1  |success|.[39m
+2023-12-09 01:14:19:1419 [31merror[39m: [31mUnable to register user.[39m
+2023-12-09 01:14:19:1419 [35mhttp[39m: [35m::1 POST /register 404 38 - 5.039 ms[39m
+[35m[39m
+2023-12-09 01:14:19:1419 [32minfo[39m: [32m|User register| username: admin1, id: 19cebac6-e3a3-4f3e-b7d2-6fad8063266f-U-1702055659110 at ::1  |success|.[39m
+2023-12-09 01:15:53:1553 [31merror[39m: [31mUnable to register user.[39m
+2023-12-09 01:15:53:1553 [35mhttp[39m: [35m::1 POST /register 404 38 - 4.968 ms[39m
+[35m[39m
+2023-12-09 01:15:53:1553 [32minfo[39m: [32m|User register| username: admin1, id: 04dca526-9f14-439c-9bbd-15ccc7924972-U-1702055753378 at ::1  |success|.[39m
+2023-12-09 01:18:03:183 [31merror[39m: [31mUnable to register user.[39m
+2023-12-09 01:18:03:183 [35mhttp[39m: [35m::1 POST /register 404 38 - 5.471 ms[39m
+[35m[39m
+2023-12-09 01:18:03:183 [32minfo[39m: [32m|User register| username: admin1, id: 286a6f8a-e7b7-40e8-a2cb-fabcd76a1feb-U-1702055883817 at ::1  |success|.[39m
+2023-12-09 01:22:25:2225 [32minfo[39m: [32m|User register| username: admin1, id: 85011e29-e060-45de-a813-53c916529d29-U-1702056145664 at ::1  |success|.[39m
+2023-12-09 01:22:26:2226 [35mhttp[39m: [35m::1 POST /register 200 50 - 401.061 ms[39m
+[35m[39m
+2023-12-09 01:22:41:2241 [32minfo[39m: [32m|User register| username: admin2, id: cffbee33-5387-4fa3-8185-390a5a549755-U-1702056161997 at ::1  |success|.[39m
+2023-12-09 01:22:42:2242 [35mhttp[39m: [35m::1 POST /register 200 50 - 316.350 ms[39m
+[35m[39m
+2023-12-09 01:24:59:2459 [35mhttp[39m: [35m::1 POST /register 404 34 - 0.267 ms[39m
+[35m[39m
+2023-12-09 01:25:14:2514 [35mhttp[39m: [35m::1 POST /register 404 34 - 0.274 ms[39m
+[35m[39m
+2023-12-09 01:25:23:2523 [35mhttp[39m: [35m::1 POST /register 404 34 - 0.215 ms[39m
+[35m[39m
+2023-12-09 01:26:17:2617 [35mhttp[39m: [35m::1 POST /register 404 34 - 0.285 ms[39m
+[35m[39m
+2023-12-09 01:26:17:2617 [35mhttp[39m: [35m::1 POST /register 404 34 - 0.247 ms[39m
+[35m[39m
+2023-12-09 01:26:18:2618 [35mhttp[39m: [35m::1 POST /register 404 34 - 0.169 ms[39m
+[35m[39m
+2023-12-09 01:26:21:2621 [32minfo[39m: [32m|User register| username: admin3, id: 25578eab-ec4e-4356-b3b7-1c8dd723145d-U-1702056381631 at ::1  |success|.[39m
+2023-12-09 01:26:22:2622 [35mhttp[39m: [35m::1 POST /register 200 50 - 488.921 ms[39m
+[35m[39m
+2023-12-09 01:27:21:2721 [35mhttp[39m: [35m::1 POST /register 404 34 - 1.809 ms[39m
+[35m[39m
+2023-12-09 01:27:25:2725 [32minfo[39m: [32m|User register| username: admin1, id: 36b1ffd6-1b50-41a8-b8e7-ba87c75c9649-U-1702056445542 at ::1  |success|.[39m
+2023-12-09 01:27:25:2725 [35mhttp[39m: [35m::1 POST /register 200 50 - 382.080 ms[39m
+[35m[39m
+2023-12-09 01:27:31:2731 [32minfo[39m: [32m|User register| username: admin2, id: ec43a755-f716-4a7c-955c-0b9e2e286338-U-1702056451133 at ::1  |success|.[39m
+2023-12-09 01:27:31:2731 [35mhttp[39m: [35m::1 POST /register 200 50 - 297.315 ms[39m
+[35m[39m
+2023-12-09 01:27:35:2735 [32minfo[39m: [32m|User register| username: admin3, id: 94cfdd01-b0ea-4ad9-9237-82eecd06cbf7-U-1702056455012 at ::1  |success|.[39m
+2023-12-09 01:27:35:2735 [35mhttp[39m: [35m::1 POST /register 200 50 - 324.465 ms[39m
+[35m[39m
+2023-12-09 01:27:41:2741 [32minfo[39m: [32m|User register| username: admin4, id: de270bed-1ab8-47ef-b350-783160250b05-U-1702056461514 at ::1  |success|.[39m
+2023-12-09 01:27:41:2741 [35mhttp[39m: [35m::1 POST /register 200 50 - 340.028 ms[39m
+[35m[39m
+2023-12-09 01:27:44:2744 [35mhttp[39m: [35m::1 POST /register 404 34 - 0.221 ms[39m
+[35m[39m
+2023-12-09 01:30:38:3038 [35mhttp[39m: [35m::1 POST /register 404 34 - 1.754 ms[39m
+[35m[39m
+2023-12-09 01:30:42:3042 [32minfo[39m: [32m|User register| username: admin1, id: 1e397e8a-8d68-422d-9b0c-1b4f90e14673-U-1702056642233 at ::1  |success|.[39m
+2023-12-09 01:30:42:3042 [35mhttp[39m: [35m::1 POST /register 200 50 - 422.064 ms[39m
+[35m[39m
+2023-12-09 01:31:26:3126 [35mhttp[39m: [35m::1 GET /customer/users 404 153 - 0.796 ms[39m
+[35m[39m
+2023-12-09 01:31:52:3152 [32minfo[39m: [32m|User register| username: admin1, id: 84315905-755d-40f6-a17e-5f004a74e485-U-1702056712440 at ::1  |success|.[39m
+2023-12-09 01:31:52:3152 [35mhttp[39m: [35m::1 POST /register 200 50 - 337.142 ms[39m
+[35m[39m
+2023-12-09 01:40:33:4033 [35mhttp[39m: [35m::1 GET /register 404 147 - 1.820 ms[39m
+[35m[39m
+2023-12-09 01:40:39:4039 [32minfo[39m: [32m|User register| username: admin1, id: 8ddd72c3-09d5-4997-90e1-b04d3b9b1f31-U-1702057239305 at ::1  |success|.[39m
+2023-12-09 01:40:39:4039 [35mhttp[39m: [35m::1 POST /register 200 50 - 390.676 ms[39m
+[35m[39m
+2023-12-09 01:41:21:4121 [35mhttp[39m: [35m::1 POST /register 404 34 - 0.241 ms[39m
+[35m[39m
+2023-12-09 01:41:33:4133 [32minfo[39m: [32m|User register| username: admin2, id: 20d20c56-f504-490c-82bc-f0a91a231d53-U-1702057293924 at ::1  |success|.[39m
+2023-12-09 01:41:34:4134 [35mhttp[39m: [35m::1 POST /register 200 50 - 865.141 ms[39m
+[35m[39m
+2023-12-09 01:47:11:4711 [32minfo[39m: [32m|User register| username: admin2, id: 8351596f-39a3-4595-ba62-b7378f27c90d-U-1702057631937 at ::1  |success|.[39m
+2023-12-09 01:47:12:4712 [35mhttp[39m: [35m::1 POST /register 200 50 - 369.347 ms[39m
+[35m[39m
+2023-12-09 01:51:18:5118 [32minfo[39m: [32m|User register| username: admin3, id: 3c9c2f7d-46a9-494b-a266-2a9b390b1114-U-1702057878770 at ::1  |success|.[39m
+2023-12-09 01:51:19:5119 [35mhttp[39m: [35m::1 POST /register 200 50 - 592.123 ms[39m
+[35m[39m
+2023-12-09 01:51:24:5124 [32minfo[39m: [32m|User register| username: admin3, id: 5d366a5c-48ef-45eb-a051-c761c6fe611c-U-1702057884713 at ::1  |success|.[39m
+2023-12-09 01:51:24:5124 [35mhttp[39m: [35m::1 POST /register 200 50 - 573.813 ms[39m
+[35m[39m
+2023-12-09 01:51:30:5130 [32minfo[39m: [32m|User register| username: admin3, id: 44e4ec88-7914-4bc1-bc95-1d2ef3ac41f3-U-1702057890366 at ::1  |success|.[39m
+2023-12-09 01:51:30:5130 [35mhttp[39m: [35m::1 POST /register 200 50 - 565.554 ms[39m
+[35m[39m
+2023-12-09 01:53:08:538 [32minfo[39m: [32m|User register| username: admin, id: 3813b45b-4c20-4eba-9696-7d3a98fc514f-U-1702057988856 at ::1  |success|.[39m
+2023-12-09 01:53:09:539 [35mhttp[39m: [35m::1 POST /register 200 49 - 613.739 ms[39m
+[35m[39m
+2023-12-09 01:54:41:5441 [35mhttp[39m: [35m::1 POST /register 404 34 - 243.554 ms[39m
+[35m[39m
+2023-12-09 01:56:12:5612 [32minfo[39m: [32m|User register| username: admin, id: 77d56feb-8f6b-4849-91aa-a2bcf9866ec3-U-1702058172183 at ::1  |success|.[39m
+2023-12-09 01:56:12:5612 [35mhttp[39m: [35m::1 POST /register 200 49 - 3144.418 ms[39m
+[35m[39m
+2023-12-09 01:56:19:5619 [32minfo[39m: [32m|User register| username: admin1, id: d023be2b-9e8b-4485-b79b-16e8412605ea-U-1702058179809 at ::1  |success|.[39m
+2023-12-09 01:56:20:5620 [35mhttp[39m: [35m::1 POST /register 200 50 - 617.774 ms[39m
+[35m[39m
+2023-12-09 01:56:24:5624 [35mhttp[39m: [35m::1 POST /register 404 34 - 260.756 ms[39m
+[35m[39m
+2023-12-09 01:56:27:5627 [35mhttp[39m: [35m::1 POST /register 404 34 - 263.796 ms[39m
+[35m[39m
+2023-12-09 02:23:00:230 [32minfo[39m: [32m|User register| username: admin1, id: a05c6f09-68d3-431c-96fd-6ad57c30e41d-U-1702059780690 at ::1  |success|.[39m
+2023-12-09 02:23:00:230 [35mhttp[39m: [35m::1 POST /register 200 50 - 600.921 ms[39m
+[35m[39m
+2023-12-09 02:23:04:234 [32minfo[39m: [32m|User register| username: admin, id: d5c0b6fc-cf1b-432b-9cb2-076538acd887-U-1702059784261 at ::1  |success|.[39m
+2023-12-09 02:23:04:234 [35mhttp[39m: [35m::1 POST /register 200 49 - 595.493 ms[39m
+[35m[39m
+2023-12-09 02:23:10:2310 [32minfo[39m: [32m|User register| username: admin, id: 565e5d5f-fd76-424d-ae13-e7f932f5ac34-U-1702059790745 at ::1  |success|.[39m
+2023-12-09 02:23:11:2311 [35mhttp[39m: [35m::1 POST /register 200 49 - 578.238 ms[39m
+[35m[39m
+2023-12-09 02:23:12:2312 [32minfo[39m: [32m|User register| username: admin, id: d7927b09-85ac-4955-b99c-fb9927a35e00-U-1702059792158 at ::1  |success|.[39m
+2023-12-09 02:23:12:2312 [35mhttp[39m: [35m::1 POST /register 200 49 - 589.297 ms[39m
+[35m[39m
+2023-12-09 02:23:13:2313 [32minfo[39m: [32m|User register| username: admin, id: 8d07b768-08f0-467f-a5a7-9b273c2d9772-U-1702059793331 at ::1  |success|.[39m
+2023-12-09 02:23:13:2313 [35mhttp[39m: [35m::1 POST /register 200 49 - 554.144 ms[39m
+[35m[39m
+2023-12-09 02:23:53:2353 [32minfo[39m: [32m|User register| username: admin, id: a78c17f4-16fb-4d2d-ae31-98162ac6e5f7-U-1702059833337 at ::1  |success|.[39m
+2023-12-09 02:23:53:2353 [35mhttp[39m: [35m::1 POST /register 200 49 - 588.483 ms[39m
+[35m[39m
+2023-12-09 02:23:55:2355 [32minfo[39m: [32m|User register| username: admin, id: 34d064ea-0196-412a-be0f-55467bb26b31-U-1702059835488 at ::1  |success|.[39m
+2023-12-09 02:23:55:2355 [35mhttp[39m: [35m::1 POST /register 200 49 - 561.065 ms[39m
+[35m[39m
+2023-12-09 02:23:56:2356 [32minfo[39m: [32m|User register| username: admin, id: 3c640227-0e1e-4007-a93c-97cef5aa1331-U-1702059836580 at ::1  |success|.[39m
+2023-12-09 02:23:56:2356 [35mhttp[39m: [35m::1 POST /register 200 49 - 564.690 ms[39m
+[35m[39m
+2023-12-09 02:24:12:2412 [35mhttp[39m: [35m::1 POST /register 404 34 - 258.256 ms[39m
+[35m[39m
+2023-12-09 02:24:13:2413 [35mhttp[39m: [35m::1 POST /register 404 34 - 217.601 ms[39m
+[35m[39m
+2023-12-09 02:24:14:2414 [35mhttp[39m: [35m::1 POST /register 404 34 - 253.212 ms[39m
+[35m[39m
+2023-12-09 02:25:17:2517 [35mhttp[39m: [35m::1 POST /register 404 34 - 289.103 ms[39m
+[35m[39m
+2023-12-09 02:26:33:2633 [35mhttp[39m: [35m::1 POST /register 404 34 - 1323.541 ms[39m
+[35m[39m
+2023-12-09 02:26:37:2637 [35mhttp[39m: [35m::1 POST /register 404 34 - 1951.343 ms[39m
+[35m[39m
+2023-12-09 02:27:12:2712 [35mhttp[39m: [35m::1 POST /register 404 34 - 264.475 ms[39m
+[35m[39m
+2023-12-09 02:27:20:2720 [35mhttp[39m: [35m::1 POST /register 404 34 - 243.960 ms[39m
+[35m[39m
+2023-12-09 02:27:25:2725 [35mhttp[39m: [35m::1 POST /register 404 34 - 266.349 ms[39m
+[35m[39m
+2023-12-09 02:27:43:2743 [35mhttp[39m: [35m::1 POST /register 404 34 - 276.931 ms[39m
+[35m[39m
+2023-12-09 02:27:47:2747 [35mhttp[39m: [35m::1 POST /register 404 34 - 257.808 ms[39m
+[35m[39m
+2023-12-09 02:27:48:2748 [35mhttp[39m: [35m::1 POST /register 404 34 - 243.707 ms[39m
+[35m[39m
+2023-12-09 02:27:51:2751 [35mhttp[39m: [35m::1 POST /register 404 34 - 288.158 ms[39m
+[35m[39m
+2023-12-09 02:28:24:2824 [35mhttp[39m: [35m::1 POST /register 404 34 - 237.083 ms[39m
+[35m[39m
+2023-12-09 02:28:36:2836 [35mhttp[39m: [35m::1 POST /register 404 34 - 236.683 ms[39m
+[35m[39m
+2023-12-09 02:30:02:302 [32minfo[39m: [32m|User register| username: admin, id: 6fc996ac-f149-4105-b4ef-7878529f4ec1-U-1702060202423 at ::1  |success|.[39m
+2023-12-09 02:30:02:302 [35mhttp[39m: [35m::1 POST /register 200 49 - 895.665 ms[39m
+[35m[39m
+2023-12-09 02:30:04:304 [35mhttp[39m: [35m::1 POST /register 404 34 - 270.942 ms[39m
+[35m[39m
+2023-12-09 02:30:05:305 [35mhttp[39m: [35m::1 POST /register 404 34 - 267.462 ms[39m
+[35m[39m
+2023-12-09 02:41:47:4147 [35mhttp[39m: [35m::1 GET / 200 1155 - 1.003 ms[39m
+[35m[39m
+2023-12-09 02:41:58:4158 [32minfo[39m: [32m|User register| username: admin, id: 831101aa-0009-4387-a2b8-83e76e80e315-U-1702060918501 at ::1  |success|.[39m
+2023-12-09 02:41:58:4158 [35mhttp[39m: [35m::1 POST /register 200 49 - 724.793 ms[39m
+[35m[39m
+2023-12-09 02:42:00:420 [35mhttp[39m: [35m::1 POST /register 404 34 - 241.983 ms[39m
+[35m[39m
+2023-12-09 02:42:03:423 [32minfo[39m: [32m|User register| username: admin1, id: 00ad3847-50e8-4a52-ae55-2fdd7c6cbc96-U-1702060923665 at ::1  |success|.[39m
+2023-12-09 02:42:03:423 [35mhttp[39m: [35m::1 POST /register 200 50 - 587.818 ms[39m
+[35m[39m
+2023-12-09 02:42:05:425 [35mhttp[39m: [35m::1 POST /register 404 34 - 262.336 ms[39m
+[35m[39m
+2023-12-09 02:42:08:428 [35mhttp[39m: [35m::1 POST /register 404 34 - 264.724 ms[39m
+[35m[39m
+2023-12-09 02:42:40:4240 [35mhttp[39m: [35m::1 GET /customer/login 404 153 - 0.543 ms[39m
+[35m[39m
+2023-12-09 02:43:16:4316 [35mhttp[39m: [35m::1 POST /customer/auth/users 404 159 - 0.854 ms[39m
+[35m[39m
+2023-12-09 02:43:29:4329 [35mhttp[39m: [35m::1 GET /customer/login 404 153 - 0.253 ms[39m
+[35m[39m
