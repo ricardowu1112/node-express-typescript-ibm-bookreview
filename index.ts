@@ -6,7 +6,7 @@ import { public_users as genl_routes } from './router/general';
 // import dotenv from 'dotenv';
 import swaggerUi from "swagger-ui-express";
 import swaggerDocument from "./swagger-output.json";
-
+import cors from 'cors';
 // dotenv.config();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,7 +29,7 @@ declare module 'express-serve-static-core' {
 const app: Application = express();
 const port = process.env.PORT || 5000;
 
-
+app.use(cors()); // 
 app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 app.use(express.json());
