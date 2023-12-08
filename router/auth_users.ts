@@ -1,6 +1,6 @@
 import express, { Request, Response, Router } from 'express';
 import jwt from 'jsonwebtoken';
-import books from './booksdb';
+import drawings from './booksdb';
 import bcrypt from 'bcrypt';
 import { isValid } from '../mongo';
 // declare module 'express-session' {
@@ -99,7 +99,7 @@ regd_users.post('/login', async (req: Request, res: Response) => {
 });
 
 
-regd_users.get('/auth/users', (req: Request, res: Response) => {
+regd_users.get('/auth/drawings', (req: Request, res: Response) => {
   //  #swagger.description = 'Get all users information: try auth'
     const username = req.user.data;
     //is use username= req.session.authorization.username; is wrong, as we don't know whether the username is property or not, 
@@ -107,43 +107,40 @@ regd_users.get('/auth/users', (req: Request, res: Response) => {
     if (!username) {
       return res.status(400).json({ message: 'Invalid request. Authentication is required.' });
     }
-    res.send(JSON.stringify(users, null, 4));
+    res.send(JSON.stringify(drawings, null, 4));
   });
 
 
-// regd_users.put('/auth/review/:isbn', (req: Request, res: Response) => {
-// //  #swagger.description = 'Add/edit review to request body and pass in isbn as query parameter'
+regd_users.put('/auth/drawing', (req: Request, res: Response) => {
+//  #swagger.description = 'Add/edit review to request body and pass in isbn as query parameter'
 
-//   const isbn: number = +req.params.isbn; // 使用+将参数转换为数字
-//   const review: string = req.body.review;
-//   const username = req.user.data;
-//   //is use username= req.session.authorization.username; is wrong, as we don't know whether the username is property or not, 
-//   //so use req.session.authorization?username instead
+  const drawing: any = req.body.drawing;
+  const username = req.user.data;
+  //is use username= req.session.authorization.username; is wrong, as we don't know whether the username is property or not, 
+  //so use req.session.authorization?username instead
 
-//   if (!isbn || !review || !username) {
-//     return res.status(400).json({ message: 'Invalid request. ISBN, review, and authentication are required.' });
-//   }
+  if ( !drawing || !username) {
+    return res.status(400).json({ message: 'Invalid request. Drawing history and authentication are required.' });
+  }
 
 
-//   const filteredReviews = books[isbn]?.reviews.filter((r) => {
-//     return r.username === username;
-//   });
+  const seachedDrawing = drawings.find(storedDrawing => storedDrawing.username === username);
 
-//   if (filteredReviews?.length > 0) {
-//     const existingReview = filteredReviews[0];
-//     existingReview.review = review;
-//     return res.status(200).json({ message: 'Review modified successfully.' });
-//   } else {
-//     // Add a new review
-//     const newReview = {
-//       username: username,
-//       review: review,
-//     };
-//     books[isbn]?.reviews.push(newReview);
-//     return res.status(200).json({ message: 'Review added successfully.' });
-//   }
+  if (seachedDrawing) {
+    const existingDrawing = seachedDrawing['drawing'];
+    existingDrawing.drawing = drawing;
+    return res.status(200).json({ message: 'Drawing modified successfully.' });
+  } else {
+    // Add a new review
+    const newDrawing = {
+      username: username,
+      drawing: drawing,
+    };
+    drawings.push(newDrawing);
+    return res.status(200).json({ message: 'Drawing added successfully.' });
+  }
 
-// });
+});
 
 
 
