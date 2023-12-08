@@ -3,12 +3,12 @@ import jwt from 'jsonwebtoken';
 import session, { Session } from 'express-session';
 import { regd_users as customer_routes } from './router/auth_users';
 import { public_users as genl_routes } from './router/general';
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 import swaggerUi from "swagger-ui-express";
 import swaggerDocument from "./swagger-output.json";
 import connectToDatabase from './mongo';
 
-dotenv.config();
+// dotenv.config();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // important as session type is not allowed to add properties

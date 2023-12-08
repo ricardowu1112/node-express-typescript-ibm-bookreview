@@ -19,7 +19,12 @@ const public_users: Router = express.Router();
 public_users.use(morganMiddleware);
 
 public_users.post('/register',  async(req: Request, res: Response) => {
-// #swagger.description = 'Any one can register account through this endpoint'
+//  #swagger.summary = 'User registration'
+  /*  #swagger.requestBody = {
+        required: true,
+        schema: { $ref: "#/definitions/swaggerRegisterUser" },
+      }
+  */
 
 // try {
 //     const newUser = new User(req.body);
@@ -28,6 +33,11 @@ public_users.post('/register',  async(req: Request, res: Response) => {
 //   } catch (error) {
 //     res.status(500).json({ error: 'An error occurred' });
 //   }
+
+    // const { error } = registerUserDto.validate(req.body);
+    // if (error) {
+    //     return res.status(400).send(error.details[0].message);
+    // }
 
   const username: string = req.body.username;
   const password: string = req.body.password;

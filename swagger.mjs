@@ -1,5 +1,6 @@
 import swaggerAutogen from 'swagger-autogen';
 
+
 const doc = {
     info: {
       title: 'Canvas Project',
