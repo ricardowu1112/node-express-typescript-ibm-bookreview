@@ -107,7 +107,16 @@ regd_users.get('/auth/drawings', (req: Request, res: Response) => {
     if (!username) {
       return res.status(400).json({ message: 'Invalid request. Authentication is required.' });
     }
-    res.send(JSON.stringify(drawings, null, 4));
+    const seachedDrawing = drawings.find(storedDrawing => storedDrawing.username === username);
+
+    if (seachedDrawing) {
+      const existingDrawing = seachedDrawing['drawing'];
+      return res.status(200).json(existingDrawing);
+    } else {
+      // Add a new review
+      return res.status(200).json([]);
+    }
+    // res.send(JSON.stringify(drawings, null, 4));
   });
 
 

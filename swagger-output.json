@@ -65,7 +65,7 @@
         }
       }
     },
-    "/customer/auth/users": {
+    "/customer/auth/drawings": {
       "get": {
         "description": "Get all users information: try auth",
         "parameters": [
@@ -73,6 +73,41 @@
             "name": "authorization",
             "in": "header",
             "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/customer/auth/drawing": {
+      "put": {
+        "description": "Add/edit review to request body and pass in isbn as query parameter",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "drawing": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {
