@@ -28,8 +28,9 @@ declare module 'express-serve-static-core' {
 
 const app: Application = express();
 const port = process.env.PORT || 5000;
-
-app.use(cors()); // 
+// const corsOptions = {origin:'http://127.0.0.1:3009',credentials:true}
+const corsOptions = {origin:'http://127.0.0.1:3009',methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',credentials:true}
+app.use(cors(corsOptions)); //
 app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 app.use(express.json());

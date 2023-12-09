@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import drawings from './booksdb';
 import bcrypt from 'bcrypt';
 import { isValid } from '../mongo';
+import cors from 'cors';
 // declare module 'express-session' {
 //   interface SessionData {
 //     authorization?: { username: string,  accessToken: string}; // Your custom session data properties
@@ -36,7 +37,8 @@ const users: User[] = [
 ];
 
 const regd_users: Router = express.Router();
-
+const corsOptions = {origin:'http://127.0.0.1:3009',methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',credentials:true}
+regd_users.use(cors(corsOptions)); //
 // const users: {id:string; username: string; hashedPassword: string }[] = [{ id: "1", username: 'admin',hashedPassword: 'admin' }];
 
 // const isValid = (username: string): boolean => {
@@ -87,9 +89,9 @@ regd_users.post('/login', async (req: Request, res: Response) => {
         accessToken,
         username,
       };
-
+      res.setHeader('Access-Control-Expose-Headers', 'Authorization');
       res.setHeader('Authorization', `Bearer ${accessToken}`);
-      return res.status(200).json({ message: 'User successfully logged in' });
+      return res.status(200).json({ message: 'User successfully logged in'});
     } else {
       // Passwords do not match
       console.log('Password is incorrect');
